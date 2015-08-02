@@ -1,0 +1,245 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2E610C0B-AA6C-4D4D-9260-D4FEB5D5A445}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Controller</RootNamespace>
+    <AssemblyName>Controller</AssemblyName>
+    <ApplicationIcon>NasaIcon.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.DirectX, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.DirectX.Direct3D, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.DirectX.DirectInput, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Control.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control.Designer.cs">
+      <DependentUpon>Control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DebugTimer.cs" />
+    <Compile Include="Drone.cs" />
+    <Compile Include="DroneCommandList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DroneCommandList.Designer.cs">
+      <DependentUpon>DroneCommandList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeightMap.cs" />
+    <Compile Include="PathFinder.cs" />
+    <Compile Include="SphereRecognition2.cs" />
+    <Compile Include="SphereRecognitionView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SphereRecognitionView.Designer.cs">
+      <DependentUpon>SphereRecognitionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScanParametersViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScanParametersViewer.Designer.cs">
+      <DependentUpon>ScanParametersViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Image.cs" />
+    <Compile Include="ConnectionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConnectionDialog.Designer.cs">
+      <DependentUpon>ConnectionDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Debug.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Debug.Designer.cs">
+      <DependentUpon>Debug.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImageViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImageViewer.Designer.cs">
+      <DependentUpon>ImageViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Map.cs" />
+    <Compile Include="Path.cs" />
+    <Compile Include="PointCloud.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ConnectionDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ConnectionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control.resx">
+      <DependentUpon>Control.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Debug.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Debug.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DroneCommandList.resx">
+      <DependentUpon>DroneCommandList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SphereRecognitionView.resx">
+      <DependentUpon>SphereRecognitionView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScanParametersViewer.resx">
+      <DependentUpon>ScanParametersViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImageViewer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ImageViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RangeImageViewer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RangeImageViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserHelp.resx">
+      <DependentUpon>UserHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RangeImage.cs" />
+    <Compile Include="RangeImageViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RangeImageViewer.Designer.cs">
+      <DependentUpon>RangeImageViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Robot.cs">
+    </Compile>
+    <Compile Include="Sphere.cs" />
+    <Compile Include="SphereRecognition.cs" />
+    <Compile Include="UserHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserHelp.Designer.cs">
+      <DependentUpon>UserHelp.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Nanook_laboratory.png" />
+    <None Include="bin\Debug\Nanook_withoutBackground.png" />
+    <Content Include="NasaIcon.ico" />
+    <None Include="Resources\button_exit21.png" />
+    <None Include="Resources\button_exit2.png" />
+    <None Include="Resources\button_load2.png" />
+    <None Include="Resources\button_exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
