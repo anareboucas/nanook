@@ -1,0 +1,234 @@
+/***************************************************************************************************
+* File:         $URL: http://obtuse.cs.jhu.edu/Projects/NASABot/Source/Trunk/Robot/Src/LADARMotorControl.cpp $
+* Author:       $Author: matthew $
+* Revision:     $Revision: 297 $
+* Last Updated: $Date: 2008-01-23 20:39:27 -0500 (Wed, 23 Jan 2008) $
+* 
+* 
+* Copyright (c) 2005-2007, Matthew G Bolitho
+* All rights reserved.
+* Redistribution and use in source and binary forms, with or without
+* modification, are permitted provided that the following conditions are met:
+*
+*     * Redistributions of source code must retain the above copyright
+*       notice, this list of conditions and the following disclaimer.
+*     * Redistributions in binary form must reproduce the above copyright
+*       notice, this list of conditions and the following disclaimer in the
+*       documentation and/or other materials provided with the distribution.
+*     * Neither the name of The Johns Hopkins University nor the
+*       names of its contributors may be used to endorse or promote products
+*       derived from this software without specific prior written permission.
+*
+* THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY
+* EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+* WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+* DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDERS AND CONTRIBUTORS BE LIABLE FOR ANY
+* DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+* (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+* LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+* ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+* (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+* SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*
+***************************************************************************************************/
+
+
+#include "Robot.hpp"
+#include "LADARMotorControl.hpp"
+
+#include "Time/DateTime.hpp"
+#include "System/Threading/Thread.hpp"
+using Bolitho::System::Thread;
+using Bolitho::CharTraits;
+using Bolitho::IO::Parity;
+using Bolitho::IO::StopBits;
+
+using Bolitho::TimeoutException;
+
+#include "Debug.h"
+
+//-----------------------------------------------------------------------------------------------------------------------------------------------------
+ImplementRuntimeType(NASA,LADARMotorController,Object);
+//-----------------------------------------------------------------------------------------------------------------------------------------------------
+#if defined(LADARMOTORCONTROLLER_SIMULATION)
+//-----------------------------------------------------------------------------------------------------------------------------------------------------
+LADARMotorController::LADARMotorController()
+{
+	m_Position = 0;
+}
+//-----------------------------------------------------------------------------------------------------------------------------------------------------
+LADARMotorController::~LADARMotorController()
+{
+
+}
+//-----------------------------------------------------------------------------------------------------------------------------------------------------
+VOID LADARMotorController::Initialize(LPCTSTR DeviceName, DWORD Baud)
+{
+	Trace0Enter("\"%s\", %d", DeviceName, Baud);
+}
+//-----------------------------------------------------------------------------------------------------------------------------------------------------
+VOID LADARMotorController::SetPosition(INT Position)
+{
+	m_Position = Position;
+}
+//-----------------------------------------------------------------------------------------------------------------------------------------------------
+VOID LADARMotorController::SetSpeed(INT Speed)
+{
+}
+//-----------------------------------------------------------------------------------------------------------------------------------------------------
+VOID LADARMotorController::Move(INT Steps)
+{
+	Trace2Enter("%d", Steps);
+	m_Position += Steps;
+}
+//-----------------------------------------------------------------------------------------------------------------------------------------------------
+BOOL LADARMotorController::MoveAndWait(INT Steps, DWORD Timeout)
+{
+	Trace2Enter("%d, %d", Steps, Timeout);
+	m_Position += Steps;
+	return TRUE;
+}
+
+//-----------------------------------------------------------------------------------------------------------------------------------------------------
+INT LADARMotorController::GetPosition()
+{
+	Trace2Enter("");
+	Trace2Return("%d", m_Position);
+	return m_Position;
+}
+//-----------------------------------------------------------------------------------------------------------------------------------------------------
+#else
+//-----------------------------------------------------------------------------------------------------------------------------------------------------
+LADARMotorController::LADARMotorController()
+{
+
+}
+//-----------------------------------------------------------------------------------------------------------------------------------------------------
+LADARMotorController::~LADARMotorController()
+{
+
+}
+//-----------------------------------------------------------------------------------------------------------------------------------------------------
+VOID LADARMotorController::Initialize(LPCTSTR DeviceName, DWORD Baud)
+{
+	Trace0Enter("\"%s\", %d", DeviceName, Baud);
+
+#if defined(SPACECUBE)
+	m_pController = File::Open(DeviceName, FileMode::OPEN, FileAccess::READWRITE);
+#else
+	m_pController = SerialPort::Open(DeviceName);
+	m_pController->SetBaudRate(Baud);
+	m_pController->SetStopBits(StopBits::ONE);
+	m_pController->SetParity(Parity::NONE);
+	m_pController->SetTimeout(1000,1000);
+	m_pController->Purge();
+#endif
+
+}
+//-----------------------------------------------------------------------------------------------------------------------------------------------------
+VOID LADARMotorController::SetPosition(INT Position)
+{
+	StringA Response;
+
+	Response = SendCommand(String::Format("/1z%dR\r", Position));
+	//if (Response[0] != 255)
+	//  ;
+}
+//-----------------------------------------------------------------------------------------------------------------------------------------------------
+VOID LADARMotorController::SetSpeed(INT Speed)
+{
+	StringA Response = SendCommand(String::Format("/1V%dR\r", Speed));
+	//if (Response[0] != 255)
+	//  ;
+}
+//-----------------------------------------------------------------------------------------------------------------------------------------------------
+VOID LADARMotorController::Move(INT Steps)
+{
+	Trace2Enter("%d", Steps);
+
+	StringA Response;
+	if (Steps < 0)
+		Response = SendCommand(StringA::Format("/1D%dR\r", -Steps));
+	else
+		Response = SendCommand(String::Format("/1P%dR\r", Steps));
+}
+//-----------------------------------------------------------------------------------------------------------------------------------------------------
+BOOL LADARMotorController::MoveAndWait(INT Steps, DWORD Timeout)
+{
+	Trace2Enter("%d, %d", Steps, Timeout);
+
+	DWORD StartTicks = GetTickCount();
+	INT StartPosition = GetPosition();
+	if(Steps == 0)
+		return TRUE;
+
+	StringA Response;
+	if (Steps < 0){
+		dprint(DEBUG_LADAR_MOTOR_1,"/1D%dR\r", -Steps);
+		Response = SendCommand(StringA::Format("/1D%dR\r", -Steps));
+	}
+	else{
+		dprint(DEBUG_LADAR_MOTOR_1,"/1P%dR\r", Steps);
+		Response = SendCommand(String::Format("/1P%dR\r", Steps));
+
+	}
+	while(GetTickCount()-StartTicks < Timeout)
+	{
+		if (Steps < 0)
+		{
+			if (GetPosition() <= StartPosition+Steps)
+				return TRUE;
+		}
+		if (Steps >= 0)
+		{
+			if (GetPosition() >= StartPosition+Steps)
+				return TRUE;
+		}
+	}
+
+	TraceError(this, "MoveAndWait has timed out");
+	Trace2Return("FALSE");
+
+	return FALSE;
+}
+
+//-----------------------------------------------------------------------------------------------------------------------------------------------------
+INT LADARMotorController::GetPosition()
+{
+	Trace2Enter("");
+
+	INT Position = 0;
+	StringA Response = SendCommand("/1?0R\r");
+
+	for (SIZE_T i=4; i<Response.Length() && Response[i] != 0x00; i++)
+	{
+		Position *= 10;
+		Position += Response[i] - '0';
+	}
+
+	Trace2Return("%d", Position);
+
+	return Position;
+}
+//-----------------------------------------------------------------------------------------------------------------------------------------------------
+StringA LADARMotorController::SendCommand(StringA Command)
+{
+	Trace3Enter("%s", Command.ConstStr());
+
+	m_pController->Write(Command.ConstStr(), Command.Length());
+
+	StringA Response;
+	CHAR X;
+	do
+	{
+		if (m_pController->Read(&X, 1) == 0)
+			throw TimeoutException(this, "The serial port read operation has timed-out");
+		Response += X;
+	}
+	while (X != 0x0a);
+
+	return Response;
+}
+//-----------------------------------------------------------------------------------------------------------------------------------------------------
+#endif
+

@@ -1,0 +1,37 @@
+8
+
+dir
+124
+https://nasabot.no-ip.org:8443/svn/Repo/Trunk/Robot/CISST
+https://nasabot.no-ip.org:8443/svn/Repo
+
+
+
+2008-08-12T15:36:04.062500Z
+85
+nasarobot
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+3a2aa148-658e-5144-8e22-3b7ab35106f7
+
+include
+dir
+
+doc
+dir
+
+lib
+dir
+

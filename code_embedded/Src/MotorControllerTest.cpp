@@ -1,0 +1,181 @@
+/***************************************************************************************************
+ * File:         $URL: http://obtuse.cs.jhu.edu/Projects/NASABot/Source/Trunk/Robot/Src/Test.cpp $
+ * Author:       $Author: matthew $
+ * Revision:     $Revision: 166 $
+ * Last Updated: $Date: 2007-08-10 14:46:23 -0400 (Fri, 10 Aug 2007) $
+ * 
+ * 
+ * Copyright (c) 2005-2007, Matthew G Bolitho
+ * All rights reserved.
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ *
+ *     * Redistributions of source code must retain the above copyright
+ *       notice, this list of conditions and the following disclaimer.
+ *     * Redistributions in binary form must reproduce the above copyright
+ *       notice, this list of conditions and the following disclaimer in the
+ *       documentation and/or other materials provided with the distribution.
+ *     * Neither the name of The Johns Hopkins University nor the
+ *       names of its contributors may be used to endorse or promote products
+ *       derived from this software without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY
+ * EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDERS AND CONTRIBUTORS BE LIABLE FOR ANY
+ * DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ *
+ ***************************************************************************************************/
+
+
+#include "Robot.hpp"
+
+#include "System/ConsoleApplication.hpp"
+using Bolitho::System::ConsoleApplication;
+
+#include "IO/File.hpp"
+using Bolitho::IO::File;
+using Bolitho::IO::FileMode;
+
+#include "IO/StdIO.hpp"
+using Bolitho::StdIn;
+
+using Bolitho::Parse;
+
+class MotorControllerTestApplication : public ConsoleApplication
+{
+protected:
+  String m_DeviceName;
+  DWORD m_BaudRate;
+
+public:
+  virtual INT Main();
+  virtual BOOL OnInit();
+};
+
+
+ImplementApplicationEntryPoint(MotorControllerTestApplication);
+
+
+using Bolitho::StdOut;
+
+#include "MotorControl.hpp"
+
+BOOL MotorControllerTestApplication::OnInit()
+{
+  if (!ConsoleApplication::OnInit())
+    return FALSE;
+
+  m_CmdLine.DefineKeyedValue((LPCTSTR) "DeviceName", (LPCTSTR) "DeviceName", (LPCTSTR) "The name of the COM port to connect to", TRUE );
+  m_CmdLine.DefineKeyedValue((LPCTSTR) "BaudRate", (LPCTSTR) "BaudRate", (LPCTSTR) "The baud rate to communicate with", FALSE, (LPCTSTR) "9600");
+
+  if (!ParseCommandLine())
+    return FALSE;
+
+  m_DeviceName = m_CmdLine.GetValue<String>((LPCTSTR) "DeviceName");
+  m_BaudRate = m_CmdLine.GetValue<DWORD>((LPCTSTR) "BaudRate");
+
+  return TRUE;
+}
+
+INT MotorControllerTestApplication::Main()
+{
+  Trace0Enter("");
+
+  MotorController M;
+  M.Initialize(m_DeviceName, m_BaudRate);
+
+  StdOut.WriteLine("Commands are:");
+  StdOut.WriteLine("EXIT");
+  StdOut.WriteLine("QUIT");
+  StdOut.WriteLine("STOP [LEFT|RIGHT]");
+  StdOut.WriteLine("LEFT <Speed>");
+  StdOut.WriteLine("RIGHT <Speed>");
+  StdOut.WriteLine("DRIVE <Speed>");
+  StdOut.WriteLine("TURN <Speed>");
+
+  while (TRUE)
+  {
+    StdOut.Write((LPCTSTR) "Current Speed: %f / %f\n>", M.GetSpeed(0), M.GetSpeed(1) );
+    String Command = StdIn.ReadLine();
+    Command.ToUpper();
+    
+    Array<String> Commands = Command.Split(String::IsWhitespace);
+
+    if (Commands.Length() < 1)
+      continue;
+
+    if (Commands[0] == "EXIT" || Commands[0] == "QUIT")
+      break;
+
+    if (Commands[0] == "HELP")
+    {
+      StdOut.WriteLine("Commands are:");
+      StdOut.WriteLine("EXIT");
+      StdOut.WriteLine("QUIT");
+      StdOut.WriteLine("STOP [LEFT|RIGHT]");
+      StdOut.WriteLine("LEFT <Speed>");
+      StdOut.WriteLine("RIGHT <Speed>");
+      StdOut.WriteLine("DRIVE <Speed>");
+      StdOut.WriteLine("TURN <Speed>");
+    }
+
+    if (Commands[0] == "STOP")
+    {
+      if (Commands.Length() == 1)
+      {
+        M.Stop();
+      }
+      else
+      {
+        if (Commands[1] == "LEFT")
+          M.SetTrackSpeed(0,0);
+        if (Commands[1] == "RIGHT")
+          M.SetTrackSpeed(1,0);
+      }
+    }
+
+    if (Commands[0] == "DRIVE")
+    {
+      FLOAT Speed = Parse<FLOAT>(Commands[1]);
+
+      M.SetTrackSpeed(0, Speed);
+      M.SetTrackSpeed(1, Speed);
+    }
+
+    if (Commands[0] == "LEFT")
+    {
+      FLOAT Speed = Parse<FLOAT>(Commands[1]);
+
+      M.SetTrackSpeed(0, Speed);
+    }
+
+    if (Commands[0] == "RIGHT")
+    {
+      FLOAT Speed = Parse<FLOAT>(Commands[1]);
+
+      M.SetTrackSpeed(1, Speed);
+    }
+
+    if (Commands[0] == "TURN")
+    {
+      FLOAT Speed = Parse<FLOAT>(Commands[1]);
+
+      M.SetTrackSpeed(0, -Speed);
+      M.SetTrackSpeed(1, +Speed);
+    }
+
+
+  }
+
+  M.Stop();
+
+  return 0;
+}
+
+

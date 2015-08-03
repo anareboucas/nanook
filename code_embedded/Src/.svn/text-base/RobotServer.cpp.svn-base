@@ -1,0 +1,189 @@
+/***************************************************************************************************
+ * File:         $URL: http://obtuse.cs.jhu.edu/Projects/NASABot/Source/Trunk/Robot/Src/RobotServer.cpp $
+ * Author:       $Author: matthew $
+ * Revision:     $Revision: 302 $
+ * Last Updated: $Date: 2008-01-26 02:04:21 -0500 (Sat, 26 Jan 2008) $
+ * 
+ * 
+ * Copyright (c) 2005-2007, Matthew G Bolitho
+ * All rights reserved.
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ *
+ *     * Redistributions of source code must retain the above copyright
+ *       notice, this list of conditions and the following disclaimer.
+ *     * Redistributions in binary form must reproduce the above copyright
+ *       notice, this list of conditions and the following disclaimer in the
+ *       documentation and/or other materials provided with the distribution.
+ *     * Neither the name of The Johns Hopkins University nor the
+ *       names of its contributors may be used to endorse or promote products
+ *       derived from this software without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY
+ * EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDERS AND CONTRIBUTORS BE LIABLE FOR ANY
+ * DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ *
+ ***************************************************************************************************/
+
+#include "Robot.hpp"
+#include "RobotServer.hpp"
+
+#include "Time/DateTime.hpp"
+using Bolitho::DateTime;
+
+#include "Net/SocketStream.hpp"
+using Bolitho::Net::Socket;
+using Bolitho::Net::SocketStream;
+using Bolitho::Net::IPAddress;
+using Bolitho::Net::IPEndPoint;
+using Bolitho::Net::AddressFamily;
+using Bolitho::Net::SocketType;
+using Bolitho::Net::ProtocolType;
+using Bolitho::Net::SocketException;
+using Bolitho::Buffer;
+
+#include "System/Configuration.hpp"
+using Bolitho::System::Configuration;
+
+#include "Math/Vector2.hpp"
+using Bolitho::Math::Vector2;
+
+#include "IO/File.hpp"
+using Bolitho::IO::File;
+using Bolitho::IO::FileMode;
+
+//----------------------------------------------------------------------------------------------------------------------------
+ImplementApplicationEntryPoint(RobotServer);
+//----------------------------------------------------------------------------------------------------------------------------
+RobotServer::RobotServer()
+{
+}
+//----------------------------------------------------------------------------------------------------------------------------
+INT RobotServer::Main()
+{
+  Trace0Enter("");
+
+  while(TRUE)
+  {
+    Thread::Sleep(10000);
+    
+    /*
+    if (!m_pMotion->IsAlive())
+    {
+      TraceWarning(this, "The RobotMotion subsystem has failed to respond.  The subsystem will be restarted");
+      m_pMotion->Destroy();
+      if (m_pMotion->ResetCount() < 2)
+        m_pMotion->Initialize();
+      else
+        TraceWarning(this, "The RobotMotion subsystem has failed to respond to attempts to restart.  No further attempts will be made");
+    }
+
+    if (!m_pVision->IsAlive())
+    {
+      TraceWarning(this, "The RobotVision subsystem has failed to respond.  The subsystem will be restarted");
+      m_pVision->Destroy();
+      if (m_pVision->ResetCount() < 10)
+        m_pVision->Initialize();
+      else
+        TraceWarning(this, "The RobotVision subsystem has failed to respond to attempts to restart.  No further attempts will be made");
+    }
+
+    if (!m_pNavigation->IsAlive())
+    {
+      TraceWarning(this, "The RobotNavigation subsystem has failed to respond.  The subsystem will be restarted");
+      m_pNavigation->Destroy();
+      if (m_pNavigation->ResetCount() < 10)
+        m_pNavigation->Initialize();
+      else
+        TraceWarning(this, "The RobotNavigation subsystem has failed to respond to attempts to restart.  No further attempts will be made");
+    }
+    */
+
+  };
+}
+//----------------------------------------------------------------------------------------------------------------------------
+BOOL RobotServer::OnInit()
+{
+  m_StartTime = DateTime::Now();
+
+  m_DebugLog = new MemoryStream();
+  Trace.AddSink(BinaryStream(m_DebugLog));
+  Trace.AddSink(File::Open(String::Format("Logs\\Robot.%d.Log", Process::GetCurrentProcessId()), FileMode::CREATE));
+
+  if (!ParseCommandLine())
+    return FALSE;
+  if (!ParseConfiguration())
+    return FALSE;
+
+  if (!ConsoleApplication::OnInit())
+    return FALSE;
+
+  Configuration::TraceSettings();
+
+  Trace0Enter("");
+
+  /* m_pDeviceControl = new DeviceController(); */
+  /* m_pClimateControl = new RobotClimateControl(); */
+
+  m_pMotion = new RobotMotion(*this);
+  m_pScanning = new RobotScanning(*this);
+
+  /* m_pNavigation = new RobotNavigation(); */
+  /* m_pVision = new RobotVision(*this); */
+  /*m_pTelemetryServer = new RobotTelemetryServer(*this);*/
+
+  m_pCommandServer = new RobotCommandServer(*this);
+
+  /*
+  if (!m_pDeviceControl->Initialize(Configuration::GetValue<String>("DeviceControl.DeviceName"), Configuration::GetValue<DWORD>("DeviceControl.BaudRate"), (BYTE)Configuration::GetValue<DWORD>("DeviceControl.RelayBoardAddress"), (BYTE)Configuration::GetValue<DWORD>("DeviceControl.AnalogDigitalBoardAddress")))
+    TraceWarning(this, "Failed to initialize DeviceControl driver");
+  */
+
+  if (!m_pMotion->Initialize())
+    TraceWarning(this, "Failed to initialize RobotMotion subsystem");
+
+  /*
+  if (!m_pVision->Initialize())
+    TraceWarning(this, "Failed to initialize RobotVision subsystem");
+  */
+
+  /*
+  if (!m_pNavigation->Initialize())
+    TraceWarning(this, "Failed to initialize RobotNavigation subsystem");
+  */
+
+  if (!m_pScanning->Initialize())
+    TraceWarning(this, "Failed to initialize RobotScanning subsystem");
+
+  /*
+  if (!m_pTelemetryServer->Initialize())
+    TraceWarning(this, "Failed to initialize RobotTelemetry subsystem");
+  */
+
+  if (!m_pCommandServer->Initialize())
+    TraceWarning(this, "Failed to initialize RobotCommand subsystem");
+
+  return TRUE;
+}
+//----------------------------------------------------------------------------------------------------------------------------
+VOID RobotServer::OnExit()
+{
+  Trace0Enter("");
+
+  /*m_pTelemetryServer->Destroy();*/
+  m_pCommandServer->Destroy();
+
+  m_pMotion->Destroy();
+  /* m_pVision->Destroy(); */
+  /* m_pNavigation->Destroy(); */
+  m_pScanning->Destroy();
+}
+//----------------------------------------------------------------------------------------------------------------------------
+

@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Com
+END
+ComException.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Com/ComException.hpp
+END
+ComPointer.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Com/ComPointer.hpp
+END
+Variant.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Com/Variant.cpp
+END
+ComObject.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Com/ComObject.cpp
+END
+ComPointerImpl.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Com/ComPointerImpl.hpp
+END
+BString.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Com/BString.cpp
+END
+Guid.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Com/Guid.cpp
+END
+Variant.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Com/Variant.hpp
+END
+ComObject.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Com/ComObject.hpp
+END
+ComObjectImpl.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Com/ComObjectImpl.hpp
+END
+BString.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Com/BString.hpp
+END
+ComException.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Com/ComException.cpp
+END
+Guid.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Com/Guid.hpp
+END

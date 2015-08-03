@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/Repo/!svn/ver/66/Trunk/Robot/CISST/lib
+END
+cisstcommon.pdb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/Repo/!svn/ver/66/Trunk/Robot/CISST/lib/cisstcommon.pdb
+END
+cisstCommon.lib
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/Repo/!svn/ver/26/Trunk/Robot/CISST/lib/cisstCommon.lib
+END
+cisstnumerical.pdb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/Repo/!svn/ver/66/Trunk/Robot/CISST/lib/cisstnumerical.pdb
+END
+cisstNumerical.lib
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/Repo/!svn/ver/26/Trunk/Robot/CISST/lib/cisstNumerical.lib
+END
+cisstvector.pdb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/Repo/!svn/ver/66/Trunk/Robot/CISST/lib/cisstvector.pdb
+END
+cisstVector.lib
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/Repo/!svn/ver/26/Trunk/Robot/CISST/lib/cisstVector.lib
+END

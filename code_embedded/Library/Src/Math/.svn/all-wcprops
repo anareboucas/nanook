@@ -1,0 +1,377 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/Repo/!svn/ver/30/Trunk/Robot/Library/Src/Math
+END
+ComplexImpl.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/ComplexImpl.hpp
+END
+Histogram.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/Histogram.hpp
+END
+AxisAlignedBox.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/AxisAlignedBox.hpp
+END
+Complex.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/Complex.cpp
+END
+VectorNImpl.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/VectorNImpl.hpp
+END
+MatrixNImpl.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/MatrixNImpl.hpp
+END
+PolynomialImpl.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/PolynomialImpl.hpp
+END
+Index.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/Index.hpp
+END
+Complex.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/Complex.hpp
+END
+QuaternionImpl.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/QuaternionImpl.hpp
+END
+MathImpl.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/MathImpl.hpp
+END
+Quaternion.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/Quaternion.cpp
+END
+VectorN.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/VectorN.hpp
+END
+MatrixN.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/MatrixN.hpp
+END
+CircleImpl.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/CircleImpl.hpp
+END
+Polynomial.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/Polynomial.hpp
+END
+Math.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/Math.cpp
+END
+VectorImpl.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/VectorImpl.hpp
+END
+Function.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/Function.hpp
+END
+Quaternion.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/Quaternion.hpp
+END
+MatrixImpl.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/MatrixImpl.hpp
+END
+OrientedPoint2Impl.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/OrientedPoint2Impl.hpp
+END
+OrientedPoint3Impl.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/OrientedPoint3Impl.hpp
+END
+Math.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/Math.hpp
+END
+Matrix.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/Matrix.cpp
+END
+Circle.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/Circle.hpp
+END
+Vector.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/Vector.hpp
+END
+PiecewisePolynomialImpl.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/PiecewisePolynomialImpl.hpp
+END
+Matrix.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/Matrix.hpp
+END
+SparseMatrixImpl.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/SparseMatrixImpl.hpp
+END
+OrientedPoint2.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/OrientedPoint2.hpp
+END
+OrientedPoint3.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/OrientedPoint3.hpp
+END
+Vector2Impl.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/Vector2Impl.hpp
+END
+GridImpl.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/GridImpl.hpp
+END
+Vector3Impl.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/Vector3Impl.hpp
+END
+Matrix2Impl.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/Matrix2Impl.hpp
+END
+SphereImpl.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/SphereImpl.hpp
+END
+Vector4Impl.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/Vector4Impl.hpp
+END
+Matrix3Impl.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/Matrix3Impl.hpp
+END
+LineImpl.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/LineImpl.hpp
+END
+BoxImpl.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/BoxImpl.hpp
+END
+Gaussian.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/Gaussian.hpp
+END
+Matrix4Impl.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/Matrix4Impl.hpp
+END
+PiecewisePolynomial.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/PiecewisePolynomial.cpp
+END
+HistogramImpl.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/HistogramImpl.hpp
+END
+Vector2.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/Vector2.cpp
+END
+Grid.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/Grid.cpp
+END
+Matrix2.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/Matrix2.cpp
+END
+PiecewisePolynomial.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/PiecewisePolynomial.hpp
+END
+SparseMatrix.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/SparseMatrix.hpp
+END
+Matrix4.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/Matrix4.cpp
+END
+AxisAlignedBoxImpl.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/AxisAlignedBoxImpl.hpp
+END
+Vector2.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/Vector2.hpp
+END
+Grid.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/Grid.hpp
+END
+Vector3.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/Vector3.hpp
+END
+Matrix2.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/Matrix2.hpp
+END
+Sphere.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/Sphere.hpp
+END
+Vector4.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/Vector4.hpp
+END
+Matrix3.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/Matrix3.hpp
+END
+Line.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/Line.hpp
+END
+Matrix4.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/Matrix4.hpp
+END
+Box.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Math/Box.hpp
+END

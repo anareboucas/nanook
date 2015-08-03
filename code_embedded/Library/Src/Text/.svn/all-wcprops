@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Text
+END
+RegularExpression.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Text/RegularExpression.cpp
+END
+StringBuilder.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Text/StringBuilder.hpp
+END
+StringBuilderImpl.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Text/StringBuilderImpl.hpp
+END
+RegularExpression.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Text/RegularExpression.hpp
+END
+String.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Text/String.cpp
+END
+CharTraits.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Text/CharTraits.hpp
+END
+CharTraitsImpl.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Text/CharTraitsImpl.hpp
+END
+String.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Text/String.hpp
+END
+StringImpl.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Text/StringImpl.hpp
+END

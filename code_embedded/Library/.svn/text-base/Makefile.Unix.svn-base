@@ -1,0 +1,71 @@
+# /********************************************************************************************
+#  * File:		$URL: http://obtuse.cs.jhu.edu/Projects/Library/Source/Branches/NASABot/Makefile.Unix $
+#  * Author:		$LastChangedBy: OBTUSE\matthew $
+#  * Revision:		$Revision: 1235 $
+#  * Last Updated:	$LastChangedDate: 2007-11-09 11:22:53 -0500 (Fri, 09 Nov 2007) $
+#  ********************************************************************************************/
+
+TARGET=CodeLibrary
+SOURCE=\
+	Test-Linux.cpp Object.cpp Type.cpp Exception.cpp PlatformException.cpp \
+	Debug/Assert.cpp Debug/Debug.cpp Debug/Trace.cpp \
+	Text/String.cpp \
+	Time/DateTime.cpp Time/Timer.cpp \
+	IO/File.cpp IO/Stream.cpp IO/Path.cpp IO/Pipe.cpp IO/StdIO.cpp IO/MemoryMappedFile.cpp IO/BinaryStream.hpp IO/SerialPort.hpp \
+	System/Configuration.cpp System/CommandLineParser.cpp System/Application.cpp System/Module.cpp System/Process.cpp System/Version.cpp \
+	System/Console.cpp System/ConsoleApplication.hpp \
+	System/Threading/Mutex.cpp System/Threading/CriticalSection.cpp System/Threading/Thread.cpp System/Threading/ThreadPool.cpp System/Threading/ConditionVariable.cpp \
+	Net/DNS.cpp Net/IPAddress.cpp Net/Socket.cpp Net/IPEndPoint.cpp 
+
+CFLAGS += -fpermissive -I./Src -pthread
+LFLAGS += -pthread -ldl -rdynamic
+
+CFLAGS_DEBUG = -DDEBUG -g3
+LFLAGS_DEBUG =
+
+CFLAGS_RELEASE = -O3 -DRELEASE -funroll-loops -ffast-math
+LFLAGS_RELEASE = -O3 
+
+OS=$(shell uname -s)
+MACHINETYPE=$(shell uname -p)
+
+SRC = Src/
+BIN = Bin/$(OS)/$(MACHINETYPE)/
+INCLUDE = /usr/include/
+
+CC=gcc
+CXX=g++
+
+OBJECTS=$(addprefix $(BIN), $(addsuffix .o, $(basename $(SOURCE))))
+
+update:
+	@echo Updating SVN...
+	@svn update
+
+all: CFLAGS += $(CFLAGS_DEBUG)
+all: LFLAGS += $(LFLAGS_DEBUG)
+all: $(BIN)$(TARGET)
+
+release: CFLAGS += $(CFLAGS_RELEASE)
+release: LFLAGS += $(LFLAGS_RELEASE)
+release: $(BIN)$(TARGET)
+
+clean:
+	@echo Cleaning...
+	@rm -f $(BIN)$(TARGET)
+	@rm -f $(OBJECTS)
+
+$(BIN)$(TARGET): $(OBJECTS)
+	@echo Linking $@...
+	@$(CXX) -o $@ $(OBJECTS) $(LFLAGS)
+
+$(BIN)%.o: $(SRC)%.c
+	@echo Compiling $(<F)...
+	@mkdir -p $(@D)
+	@$(CC) -c -o $@ $(CFLAGS) -I$(INCLUDE) $<
+
+$(BIN)%.o: $(SRC)%.cpp
+	@echo Compiling $(<F)...
+	@mkdir -p $(@D)
+	@$(CXX) -c -o $@ $(CFLAGS) -I$(INCLUDE) $<
+

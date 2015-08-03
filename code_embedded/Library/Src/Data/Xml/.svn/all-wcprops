@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Data/Xml
+END
+Document.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Data/Xml/Document.cpp
+END
+NodeList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Data/Xml/NodeList.cpp
+END
+Document.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Data/Xml/Document.hpp
+END
+ParseError.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Data/Xml/ParseError.cpp
+END
+MsXml.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Data/Xml/MsXml.hpp
+END
+Node.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Data/Xml/Node.cpp
+END
+NodeList.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Data/Xml/NodeList.hpp
+END
+NamedNodeMap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Data/Xml/NamedNodeMap.cpp
+END
+ParseError.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Data/Xml/ParseError.hpp
+END
+Node.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Data/Xml/Node.hpp
+END
+NamedNodeMap.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Data/Xml/NamedNodeMap.hpp
+END

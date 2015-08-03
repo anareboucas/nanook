@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/Repo/!svn/ver/30/Trunk/Robot/Library
+END
+Library.sln
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Library.sln
+END
+Makefile.Unix
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Makefile.Unix
+END
+Library.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Library.vcproj
+END
+BuildVersion.bat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/BuildVersion.bat
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Makefile
+END

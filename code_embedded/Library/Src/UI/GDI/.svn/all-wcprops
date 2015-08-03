@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/UI/GDI
+END
+Menu.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/UI/GDI/Menu.cpp
+END
+DeviceContext.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/UI/GDI/DeviceContext.cpp
+END
+Font.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/UI/GDI/Font.cpp
+END
+Menu.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/UI/GDI/Menu.hpp
+END
+DeviceContext.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/UI/GDI/DeviceContext.hpp
+END
+Font.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/UI/GDI/Font.hpp
+END
+Bitmap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/UI/GDI/Bitmap.cpp
+END
+Cursor.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/UI/GDI/Cursor.cpp
+END
+Bitmap.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/UI/GDI/Bitmap.hpp
+END
+Cursor.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/UI/GDI/Cursor.hpp
+END
+Brush.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/UI/GDI/Brush.cpp
+END
+Accelerator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/UI/GDI/Accelerator.cpp
+END
+Pen.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/UI/GDI/Pen.hpp
+END
+Icon.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/UI/GDI/Icon.cpp
+END
+Brush.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/UI/GDI/Brush.hpp
+END
+Accelerator.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/UI/GDI/Accelerator.hpp
+END
+Icon.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/UI/GDI/Icon.hpp
+END

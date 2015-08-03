@@ -1,0 +1,257 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/IO
+END
+MemoryMappedFile.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/IO/MemoryMappedFile.cpp
+END
+BinaryStream.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/IO/BinaryStream.cpp
+END
+Path.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/IO/Path.hpp
+END
+Compression.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/IO/Compression.cpp
+END
+ProxyStream.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/IO/ProxyStream.hpp
+END
+Pipe.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/IO/Pipe.hpp
+END
+BZip2Stream.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/IO/BZip2Stream.cpp
+END
+DebugStream.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/IO/DebugStream.cpp
+END
+MemoryMappedFile.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/IO/MemoryMappedFile.hpp
+END
+BinaryStream.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/IO/BinaryStream.hpp
+END
+TextStream.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/IO/TextStream.hpp
+END
+Compression.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/IO/Compression.hpp
+END
+BZip2Stream.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/IO/BZip2Stream.hpp
+END
+DebugStream.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/IO/DebugStream.hpp
+END
+.SerialPort.cpp.swp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/IO/.SerialPort.cpp.swp
+END
+StdIO.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/IO/StdIO.cpp
+END
+StreamImpl.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/IO/StreamImpl.hpp
+END
+MemoryStream.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/IO/MemoryStream.cpp
+END
+GZipStream.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/IO/GZipStream.cpp
+END
+StdIO.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/IO/StdIO.hpp
+END
+MemoryStream.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/IO/MemoryStream.hpp
+END
+GZipStream.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/IO/GZipStream.hpp
+END
+IOException.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/IO/IOException.hpp
+END
+Stream.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/IO/Stream.cpp
+END
+Stream.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/IO/Stream.hpp
+END
+SequentialDataStoreImpl.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/IO/SequentialDataStoreImpl.hpp
+END
+DataStoreImpl.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/IO/DataStoreImpl.hpp
+END
+File.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/IO/File.cpp
+END
+SequentialDataStore.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/IO/SequentialDataStore.cpp
+END
+FileEnumerator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/IO/FileEnumerator.cpp
+END
+File.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/IO/File.hpp
+END
+SerialPort.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/IO/SerialPort.cpp
+END
+SequentialDataStore.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/IO/SequentialDataStore.hpp
+END
+FileEnumerator.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/IO/FileEnumerator.hpp
+END
+DataStore.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/IO/DataStore.cpp
+END
+BinaryStreamImpl.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/IO/BinaryStreamImpl.hpp
+END
+TextStreamImpl.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/IO/TextStreamImpl.hpp
+END
+SerialPort.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/IO/SerialPort.hpp
+END
+DataStore.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/IO/DataStore.hpp
+END
+Path.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/IO/Path.cpp
+END
+ProxyStream.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/IO/ProxyStream.cpp
+END
+Pipe.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/IO/Pipe.cpp
+END

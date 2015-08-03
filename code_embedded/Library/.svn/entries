@@ -1,0 +1,97 @@
+8
+
+dir
+124
+https://nasabot.no-ip.org:8443/svn/Repo/Trunk/Robot/Library
+https://nasabot.no-ip.org:8443/svn/Repo
+
+
+
+2008-06-27T16:40:12.875000Z
+30
+Zach
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+3a2aa148-658e-5144-8e22-3b7ab35106f7
+
+Library.sln
+file
+
+
+
+
+2008-11-12T21:21:08.000000Z
+0a72308474ad9a39ddec4603e3dd6239
+2008-06-23T18:36:30.546875Z
+1
+nasarobot
+
+Makefile.Unix
+file
+
+
+
+
+2008-11-12T21:21:08.000000Z
+da0a8379d799847ef93616fa20157f89
+2008-06-23T18:36:30.546875Z
+1
+nasarobot
+
+TestProject
+dir
+
+Library.vcproj
+file
+
+
+
+
+2008-11-12T21:21:08.000000Z
+ac9a7e6f91e853a207e4ac6baf1f833c
+2008-06-23T18:36:30.546875Z
+1
+nasarobot
+
+Src
+dir
+
+Res
+dir
+
+BuildVersion.bat
+file
+
+
+
+
+2008-11-12T21:21:08.000000Z
+a50fbbc55d784ea4932f8df98e5609ac
+2008-06-23T18:36:30.546875Z
+1
+nasarobot
+
+Makefile
+file
+
+
+
+
+2008-11-12T21:21:08.000000Z
+0371085b3f588a762bcfa4188d24d8e9
+2008-06-23T18:36:30.546875Z
+1
+nasarobot
+

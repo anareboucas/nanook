@@ -1,0 +1,299 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Lua/LuaBind
+END
+error.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Lua/LuaBind/error.hpp
+END
+copy_policy.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Lua/LuaBind/copy_policy.hpp
+END
+dependency_policy.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Lua/LuaBind/dependency_policy.hpp
+END
+prefix.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Lua/LuaBind/prefix.hpp
+END
+container_policy.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Lua/LuaBind/container_policy.hpp
+END
+wrapper_base.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Lua/LuaBind/wrapper_base.cpp
+END
+class_rep.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Lua/LuaBind/class_rep.cpp
+END
+object_rep.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Lua/LuaBind/object_rep.cpp
+END
+ref.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Lua/LuaBind/ref.cpp
+END
+wrapper_base.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Lua/LuaBind/wrapper_base.hpp
+END
+class_info.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Lua/LuaBind/class_info.cpp
+END
+overload_rep.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Lua/LuaBind/overload_rep.cpp
+END
+back_reference.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Lua/LuaBind/back_reference.hpp
+END
+return_reference_to_policy.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Lua/LuaBind/return_reference_to_policy.hpp
+END
+get_pointer.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Lua/LuaBind/get_pointer.hpp
+END
+implicit_cast.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Lua/LuaBind/implicit_cast.cpp
+END
+class_info.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Lua/LuaBind/class_info.hpp
+END
+out_value_policy.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Lua/LuaBind/out_value_policy.hpp
+END
+create_class.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Lua/LuaBind/create_class.cpp
+END
+stack_content_by_name.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Lua/LuaBind/stack_content_by_name.cpp
+END
+yield_policy.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Lua/LuaBind/yield_policy.hpp
+END
+adopt_policy.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Lua/LuaBind/adopt_policy.hpp
+END
+pcall.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Lua/LuaBind/pcall.cpp
+END
+handle.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Lua/LuaBind/handle.hpp
+END
+operator.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Lua/LuaBind/operator.hpp
+END
+open.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Lua/LuaBind/open.cpp
+END
+class.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Lua/LuaBind/class.cpp
+END
+open.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Lua/LuaBind/open.hpp
+END
+find_best_match.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Lua/LuaBind/find_best_match.cpp
+END
+scope.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Lua/LuaBind/scope.cpp
+END
+config.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Lua/LuaBind/config.hpp
+END
+class.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Lua/LuaBind/class.hpp
+END
+object.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Lua/LuaBind/object.hpp
+END
+iterator_policy.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Lua/LuaBind/iterator_policy.hpp
+END
+raw_policy.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Lua/LuaBind/raw_policy.hpp
+END
+scope.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Lua/LuaBind/scope.hpp
+END
+value_wrapper.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Lua/LuaBind/value_wrapper.hpp
+END
+luabind.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Lua/LuaBind/luabind.hpp
+END
+back_reference_fwd.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Lua/LuaBind/back_reference_fwd.hpp
+END
+weak_ref.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Lua/LuaBind/weak_ref.cpp
+END
+function.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Lua/LuaBind/function.cpp
+END
+link_compatibility.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Lua/LuaBind/link_compatibility.cpp
+END
+weak_ref.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Lua/LuaBind/weak_ref.hpp
+END
+lua_include.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Lua/LuaBind/lua_include.hpp
+END
+error.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Lua/LuaBind/error.cpp
+END
+function.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Lua/LuaBind/function.hpp
+END
+discard_result_policy.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Lua/LuaBind/discard_result_policy.hpp
+END
+from_stack.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Lua/LuaBind/from_stack.hpp
+END
+class_registry.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/Repo/!svn/ver/12/Trunk/Robot/Library/Src/Lua/LuaBind/class_registry.cpp
+END
