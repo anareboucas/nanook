@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['r',['r',['../struct_c_o_l_o_r.html#a49a77a838ed56bf0535fbf0e3f77b730',1,'COLOR']]],
+  ['referencescale1dark100',['ReferenceScale1Dark100',['../struct_n_a_s_a_1_1_s_c_a_n_n_e_r_s_t_a_t_u_s.html#ab53b7afbe22edc87bc23d33ba8d88a48',1,'NASA::SCANNERSTATUS']]],
+  ['referencescale1dark66',['ReferenceScale1Dark66',['../struct_n_a_s_a_1_1_s_c_a_n_n_e_r_s_t_a_t_u_s.html#aecc0f29b54e180a86e22ab5529f7278d',1,'NASA::SCANNERSTATUS']]],
+  ['referencescale2dark100',['ReferenceScale2Dark100',['../struct_n_a_s_a_1_1_s_c_a_n_n_e_r_s_t_a_t_u_s.html#a1fd1bdfa57f62bf077826264cef0b17a',1,'NASA::SCANNERSTATUS']]],
+  ['referencescale2dark66',['ReferenceScale2Dark66',['../struct_n_a_s_a_1_1_s_c_a_n_n_e_r_s_t_a_t_u_s.html#aa1ccae5589ee3e858fa1e2f936bfeeb8',1,'NASA::SCANNERSTATUS']]],
+  ['referencetargetmean',['ReferenceTargetMean',['../struct_n_a_s_a_1_1_s_c_a_n_n_e_r_s_t_a_t_u_s.html#abdccca947874097264ed8332caeebbe0',1,'NASA::SCANNERSTATUS']]],
+  ['referencetargetsingle',['ReferenceTargetSingle',['../struct_n_a_s_a_1_1_s_c_a_n_n_e_r_s_t_a_t_u_s.html#a4c8d36599c86932f59a579eb6afc17da',1,'NASA::SCANNERSTATUS']]],
+  ['refpollutionvalues',['RefPollutionValues',['../struct_n_a_s_a_1_1_s_c_a_n_n_e_r_s_t_a_t_u_s.html#ae022f6aaa912d6b3b6329bece2d7c8f8',1,'NASA::SCANNERSTATUS']]],
+  ['reserved1',['Reserved1',['../struct_n_a_s_a_1_1_s_c_a_n_n_e_r_s_t_a_t_u_s.html#a330336fa757a73303ce309a8120a0585',1,'NASA::SCANNERSTATUS']]],
+  ['reserved2',['Reserved2',['../struct_n_a_s_a_1_1_s_c_a_n_n_e_r_s_t_a_t_u_s.html#a1d1d0d3eb4859b3b581fb52b97cddc78',1,'NASA::SCANNERSTATUS']]],
+  ['reserved3',['Reserved3',['../struct_n_a_s_a_1_1_s_c_a_n_n_e_r_s_t_a_t_u_s.html#ad8aa4296e92d4c9ec16bf0d4a2838df7',1,'NASA::SCANNERSTATUS']]],
+  ['reserved4',['Reserved4',['../struct_n_a_s_a_1_1_s_c_a_n_n_e_r_s_t_a_t_u_s.html#aecc16ab85c2e2c6a6ce8b6b6a48af6e6',1,'NASA::SCANNERSTATUS']]],
+  ['reserved5',['Reserved5',['../struct_n_a_s_a_1_1_s_c_a_n_n_e_r_s_t_a_t_u_s.html#a9c9b5d87b802be007765b3230d8e87ec',1,'NASA::SCANNERSTATUS']]],
+  ['reserved7',['Reserved7',['../struct_n_a_s_a_1_1_s_c_a_n_n_e_r_s_t_a_t_u_s.html#aaa0d79c759720c726e4fef836ff769a2',1,'NASA::SCANNERSTATUS']]],
+  ['reserved8',['Reserved8',['../struct_n_a_s_a_1_1_s_c_a_n_n_e_r_s_t_a_t_u_s.html#a03b18abad10730e2c3e8316e5074f88b',1,'NASA::SCANNERSTATUS']]],
+  ['response',['Response',['../struct_n_a_s_a_1_1_t_e_l_e_g_r_a_m_h_e_a_d_e_r.html#af3e782f98c755e09a3c27c1ca97a4d63',1,'NASA::TELEGRAMHEADER']]],
+  ['restartmode',['RestartMode',['../struct_n_a_s_a_1_1_s_c_a_n_n_e_r_s_t_a_t_u_s.html#a93b839920ccbf16dfe402dff077b92d3',1,'NASA::SCANNERSTATUS']]],
+  ['restarttime',['RestartTime',['../struct_n_a_s_a_1_1_s_c_a_n_n_e_r_s_t_a_t_u_s.html#a4d6da39f2dc5729d597612f461a09d95',1,'NASA::SCANNERSTATUS']]]
+];
